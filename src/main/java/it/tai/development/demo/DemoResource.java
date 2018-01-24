@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoResource {
 
-    private int version = 1;
+    private int version = 2;
 
     @GetMapping("/message")
     public MessageDto message() {
