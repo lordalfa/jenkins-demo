@@ -27,7 +27,7 @@ public class DemoApplicationTests {
     @Test
     public void messageShouldBeDefault() {
         MessageDto message = this.restTemplate.getForObject("http://localhost:" + port + "/api/demo/message", MessageDto.class);
-        assertThat(message.getMessage()).isEqualToIgnoringCase("Service Version 1");
+        assertThat(message.getMessage()).contains("Service Version");
     }
 
 }
